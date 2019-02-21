@@ -26,7 +26,7 @@ import { MODAL_NAME as MOVIE_DELETE_MODAL_NAME } from 'components/modals/MovieDe
 const Films = ({ movies, classes, modalShow }) => (
   <div className={classnames(classes.root, 'container-fluid')}>
     <div className="row flex-wrap justify-content-center">
-      <div className="col-8">
+      <div className="col-xs-12 col-sm-8">
         <div className="row flex-column">
           <List className={classnames(classes.list, 'col-12')}>
             {movies.map(

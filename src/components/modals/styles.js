@@ -7,7 +7,14 @@ export default (theme) => ({
     padding: theme.spacing.unit * 4,
     outline: 'none',
     top: 200,
-    left: `calc(50% - ${theme.spacing.unit * 50/2}px)`
+    left: `calc(50% - ${theme.spacing.unit * 50/2}px)`,
+    [theme.breakpoints.down('sm')]: {
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0,
+      width: 'auto'
+    }
   },
   yearSelectList: {
     maxHeight: 400,
