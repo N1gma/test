@@ -5,9 +5,9 @@ import moviesNetworkService from 'services/network/movies';
 
 function* fetchMoviesSaga() {
   const response = yield all([
-    call(moviesNetworkService.get1),
-    call(moviesNetworkService.get2),
-    call(moviesNetworkService.get3),
+    call(moviesNetworkService.getMovie1),
+    call(moviesNetworkService.getMovie2),
+    call(moviesNetworkService.getMovie3),
   ]);
 
   const movies = response.map(({ data }) => data);
